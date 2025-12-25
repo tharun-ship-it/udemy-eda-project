@@ -1,37 +1,81 @@
-# Udemy Courses: Exploratory Data Analysis
+<p align="center">
+  <img src="https://img.icons8.com/fluency/96/combo-chart.png" alt="Udemy EDA Logo" width="100"/>
+</p>
+
+<h1 align="center">📊 Udemy Courses: Exploratory Data Analysis</h1>
+
+<p align="center">
+  <strong>An in-depth analysis of Udemy's online course catalog uncovering pricing strategies, subscriber patterns, and market trends</strong>
+</p>
+
+<p align="center">
+  <a href="#-overview">Overview</a> •
+  <a href="#-live-demo">Live Demo</a> •
+  <a href="#-key-findings">Key Findings</a> •
+  <a href="#-installation">Installation</a> •
+  <a href="#-results">Results</a> •
+  <a href="#-methodology">Methodology</a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.8+"/>
+  <img src="https://img.shields.io/badge/Jupyter-Notebook-F37626?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter"/>
+  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas"/>
+  <img src="https://img.shields.io/badge/Seaborn-3776AB?style=for-the-badge" alt="Seaborn"/>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/License-MIT-00D9A5?style=for-the-badge" alt="MIT License"/>
+  <img src="https://img.shields.io/badge/Data-Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white" alt="Kaggle"/>
+  <img src="https://img.shields.io/badge/Courses_Analyzed-3,682-E94560?style=for-the-badge" alt="Courses"/>
+</p>
+
+---
+
+## 🎯 Overview
+
+This project analyzes **3,682 courses** across four major subjects (Web Development, Business Finance, Graphic Design, Musical Instruments) to uncover insights about the dynamics of online education platforms. The analysis employs statistical methods and visualization techniques to identify factors associated with course popularity and learner engagement.
 
 <p align="center">
   <img src="figures/banner.png" alt="Dashboard Preview" width="800"/>
 </p>
 
-[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
-[![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange.svg)](https://jupyter.org)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Data](https://img.shields.io/badge/Data-Kaggle-20beff.svg)](https://www.kaggle.com/andrewmvd/udemy-courses)
+---
 
-An in-depth exploratory data analysis of Udemy's online course catalog, investigating patterns in course distribution, pricing strategies, subscriber engagement, and temporal trends in the online education market.
+## 🚀 Live Demo
 
-## Overview
+Run this notebook instantly in your browser - no installation required!
 
-This project analyzes **3,682 courses** across four major subjects (Web Development, Business Finance, Graphic Design, Musical Instruments) to uncover insights about the dynamics of online education platforms. The analysis employs statistical methods and visualization techniques to identify factors associated with course popularity and learner engagement.
+<p align="center">
+  <a href="https://colab.research.google.com/github/tharun-ship-it/udemy-eda-project/blob/main/notebooks/udemy_eda.ipynb">
+    <img src="https://img.shields.io/badge/▶_OPEN_IN_COLAB-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white" alt="Open In Colab" height="50"/>
+  </a>
+</p>
 
-### Key Findings
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tharun-ship-it/udemy-eda-project/main?labpath=notebooks%2Fudemy_eda.ipynb)
+
+---
+
+## 📈 Key Findings
 
 | Metric | Value |
 |--------|-------|
-| Total Courses Analyzed | 3,682 |
-| Total Subscribers | 11.9M+ |
-| Median Course Price | $50 |
-| Free Course Percentage | ~8.4% |
-| Top Subject (by subscribers) | Web Development |
+| **Total Courses Analyzed** | 3,682 |
+| **Total Subscribers** | 11.9M+ |
+| **Median Course Price** | $50 |
+| **Free Course Percentage** | ~8.4% |
+| **Top Subject** | Web Development |
 
-**Notable Insights:**
+### 💡 Notable Insights
+
 - Price shows **weak correlation** (ρ ≈ 0.05) with subscriber count
 - Web Development courses capture **3.4x more subscribers per course** than Business Finance
 - Course publication rates **increased 400%** between 2013-2016
 - Free courses exhibit distinct engagement patterns despite representing only 8% of catalog
 
-## Project Structure
+---
+
+## 📁 Project Structure
 
 ```
 udemy-eda-project/
@@ -56,7 +100,9 @@ udemy-eda-project/
 └── README.md
 ```
 
-## Dataset
+---
+
+## 📊 Dataset
 
 **Source:** [Kaggle - Udemy Courses](https://www.kaggle.com/andrewmvd/udemy-courses)
 
@@ -75,7 +121,9 @@ udemy-eda-project/
 | `published_timestamp` | Publication date | datetime |
 | `subject` | Course category | str |
 
-## Methodology
+---
+
+## 🔬 Methodology
 
 ### 1. Data Cleaning
 - Missing value analysis and imputation
@@ -88,12 +136,16 @@ udemy-eda-project/
 - Revenue estimation for paid courses
 
 ### 3. Analysis Dimensions
-- **Univariate**: Distribution analysis of numerical and categorical features
-- **Bivariate**: Correlation analysis, cross-tabulations
-- **Temporal**: Publication trends, seasonal patterns
-- **Comparative**: Free vs. paid, subject-level comparisons
+| Dimension | Description |
+|-----------|-------------|
+| **Univariate** | Distribution analysis of numerical and categorical features |
+| **Bivariate** | Correlation analysis, cross-tabulations |
+| **Temporal** | Publication trends, seasonal patterns |
+| **Comparative** | Free vs. paid, subject-level comparisons |
 
-## Results
+---
+
+## 📸 Results
 
 ### Subject Distribution
 
@@ -131,7 +183,9 @@ Platform growth accelerated significantly post-2013, coinciding with mobile app 
   <img src="figures/free_vs_paid.png" alt="Free vs Paid Comparison" width="700"/>
 </p>
 
-## Quick Start
+---
+
+## 📦 Installation
 
 ### Prerequisites
 
@@ -140,7 +194,7 @@ Python >= 3.8
 pip >= 21.0
 ```
 
-### Installation
+### Quick Start
 
 ```bash
 # Clone the repository
@@ -169,24 +223,22 @@ cd notebooks
 jupyter nbconvert --execute --to notebook udemy_eda.ipynb
 ```
 
-## Dependencies
+---
 
-```
-numpy>=1.19.0
-pandas>=1.2.0
-matplotlib>=3.3.0
-seaborn>=0.11.0
-jupyter>=1.0.0
-```
+## 🛠 Technologies
 
-## Live Demo
+| Technology | Purpose |
+|------------|---------|
+| ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white) | Core analysis |
+| ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white) | Data manipulation |
+| ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white) | Numerical computing |
+| ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=flat) | Visualizations |
+| ![Seaborn](https://img.shields.io/badge/Seaborn-3776AB?style=flat) | Statistical plots |
+| ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat&logo=jupyter&logoColor=white) | Interactive notebook |
 
-Run this notebook instantly in your browser - no installation required!
+---
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tharun-ship-it/udemy-eda-project/blob/main/notebooks/udemy_eda.ipynb)
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tharun-ship-it/udemy-eda-project/main?labpath=notebooks%2Fudemy_eda.ipynb)
-
-## Future Work
+## 🛣 Future Work
 
 - [ ] Sentiment analysis of course reviews
 - [ ] Predictive modeling for subscriber count
@@ -194,35 +246,52 @@ Run this notebook instantly in your browser - no installation required!
 - [ ] NLP analysis of course titles and descriptions
 - [ ] Integration with additional datasets (instructor info, ratings over time)
 
-## Contributing
+---
 
-Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
+## 🤝 Contributing
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-## License
+```bash
+# Fork and clone
+git clone https://github.com/YOUR_USERNAME/udemy-eda-project.git
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+# Create branch
+git checkout -b feature/amazing-feature
 
-## Acknowledgments
+# Commit and push
+git commit -m 'Add amazing feature'
+git push origin feature/amazing-feature
+
+# Open Pull Request
+```
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License—see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🙏 Acknowledgments
 
 - Dataset provided by [Larxel](https://www.kaggle.com/andrewmvd) on Kaggle
 - Visualization inspiration from [Seaborn Gallery](https://seaborn.pydata.org/examples/index.html)
 
-## Contact
+---
 
-👤 **Tharun Ponnam**
-- GitHub: [@tharun-ship-it](https://github.com/tharun-ship-it)
-- Email: [tharunponnam007@gmail.com](mailto:tharunponnam007@gmail.com)
+## 👤 Author
 
-Project Link: [https://github.com/tharun-ship-it/udemy-eda-project](https://github.com/tharun-ship-it/udemy-eda-project)
+**Tharun Ponnam**
+
+* GitHub: [@tharun-ship-it](https://github.com/tharun-ship-it)
+* Email: tharunponnam007@gmail.com
 
 ---
 
-<p align="center">
-  <i>If you found this analysis useful, please consider giving it a ⭐</i>
-</p>
+**⭐ If you find this project useful, please consider giving it a star!**
+
+* [🔗 Live Demo](https://colab.research.google.com/github/tharun-ship-it/udemy-eda-project/blob/main/notebooks/udemy_eda.ipynb)
+* [🐛 Report Bug](https://github.com/tharun-ship-it/udemy-eda-project/issues)
+* [✨ Request Feature](https://github.com/tharun-ship-it/udemy-eda-project/pulls)
