@@ -186,8 +186,6 @@ Run this notebook instantly in your browser - no installation required!
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/tharun-ship-it/udemy-eda-project/blob/main/notebooks/udemy_eda.ipynb)
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tharun-ship-it/udemy-eda-project/main?labpath=notebooks%2Fudemy_eda.ipynb)
 
-> **Note:** Google Colab allows anyone to view and execute the notebook directly in the browser, making it perfect for portfolio demonstrations.
-
 ## Future Work
 
 - [ ] Sentiment analysis of course reviews
